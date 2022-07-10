@@ -2,9 +2,7 @@ import { useEffect, useState } from 'react';
 import _ from 'lodash';
 import { Path, PathValue } from 'react-hook-form';
 
-/** Custom state management
- * @author leonardo.scholler(at)poatek.com
- */
+/** Function to create a state tree and a way for React to listen to changes on it */
 function Store<State>(initial: State) {
   const always = (x: boolean) => !x;
   let state = _.cloneDeep(initial);
@@ -18,9 +16,9 @@ function Store<State>(initial: State) {
     };
   }
 
-  /** hook to subscribe to any of the state's attributes changes
-   * @param path path to attribute, can be a nested path, autocompleted by typescrit
-   * @returns the attribute
+  /** hook to subscribe to a subtree of the state
+   * @param path path to subtree, can be a nested path, autocompleted by typescrit
+   * @returns the subtree
    * @example const property = useObserver('property')
    */
   function useSubtree<P extends Path<State>>(path: P): PathValue<State, P> {

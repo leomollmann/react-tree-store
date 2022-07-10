@@ -1,14 +1,14 @@
 {
-  "name": "react-minimal-state",
+  "name": "react-tree-store",
   "version": "1.0.0",
-  "description": "simple state management for React",
+  "description": "Simple state management for React",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/leomollmann/react-graph.git"
+    "url": "git+https://github.com/leomollmann/react-tree-store.git"
   },
   "keywords": [
     "react",
@@ -20,9 +20,9 @@
   "author": "leomollmann",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/leomollmann/react-graph/issues"
+    "url": "https://github.com/leomollmann/react-tree-store/issues"
   },
-  "homepage": "https://github.com/leomollmann/react-graph#readme",
+  "homepage": "https://github.com/leomollmann/react-tree-store#readme",
   "devDependencies": {
     "lodash": "^4.17.21",
     "react": "^18.2.0",
