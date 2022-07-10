@@ -1,0 +1,34 @@
+{
+  "name": "react-minimal-state",
+  "version": "1.0.0",
+  "description": "simple state management for React",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/leomollmann/react-graph.git"
+  },
+  "keywords": [
+    "react",
+    "store",
+    "global",
+    "state",
+    "management"
+  ],
+  "author": "leomollmann",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/leomollmann/react-graph/issues"
+  },
+  "homepage": "https://github.com/leomollmann/react-graph#readme",
+  "devDependencies": {
+    "lodash": "^4.17.21",
+    "react": "^18.2.0",
+    "react-hook-form": "^7.33.1",
+    "typescript": "^4.7.4",
+    "@types/lodash": "^4.14.182",
+    "@types/react": "^18.0.15"
+  }
+}
