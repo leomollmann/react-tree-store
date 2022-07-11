@@ -1,7 +1,7 @@
 # Simple state management for React
 *A implementation of a sharable state with the observer pattern and without context API*
 
-This package provides you with a way to supply values to React components, a fine control on when to update the components and a architecture proposal for making this shared state scalable and testable. It uses the concept of trees to controll when the components should update by simple `===` comparision of values.
+This package provides you with a way to supply values to React components, a fine control on when to update the components and a architecture proposal for making this shared states scalable and testable. It uses the concept of trees to controll when the components should update by simple `===` comparision of values.
 
 If you liked the concept of this project, feel welcomed to contribute with ideas or code improvements!
 
@@ -28,13 +28,13 @@ export type CartState {
 Create a file `store.ts` in `src/store/cart/`.
 ```ts
 const initialState: CartState = {
-  open: false
-  products: []
+  open: false,
+  products: [],
   summary: {
-    tax: 0
-    discount: 0
-    shipping: 0
-    productsSubtotal: 0
+    tax: 0,
+    discount: 0,
+    shipping: 0,
+    productsSubtotal: 0,
     total: 0
   }
 }

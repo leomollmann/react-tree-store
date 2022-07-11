@@ -1,6 +1,6 @@
 {
   "name": "react-tree-store",
-  "version": "0.2.0",
+  "version": "0.2.2",
   "description": "Simple state management for React",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
