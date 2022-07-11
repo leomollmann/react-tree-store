@@ -1,7 +1,7 @@
 # Simple state management for React
 *A implementation of a sharable state with the observer pattern and without context API*
 
-This package provides you with a way to supply values to React components, a fine control on when to update the components and a architecture proposal for making this shared state scalable and testable.
+This package provides you with a way to supply values to React components, a fine control on when to update the components and a architecture proposal for making this shared state scalable and testable. It uses the concept of trees to controll when the components should update by simple `===` comparision of values.
 
 ---
 ## How to use
@@ -75,7 +75,7 @@ function SummaryComponent() {
 ```
 
 ### Step 4: Create the actions
-Declare the functions that mutates the state in `src/store/cart/actions` with this pattern
+Declare the functions that mutates the state in `src/store/cart/actions/<action name>.ts` with this pattern
 ```tsx
 function toggleCartOpen() {
     // first, get the state to mutate it
@@ -109,7 +109,8 @@ function calculateTotal() {
         - cart.summary.discount
     )
     
-    // 1st section, business logic encapsulated
+    // 2nd section, defining where in the tree our observers should update
+    // by reassignment
     cart.summary = {
         ...cart.summary,
         productsSubtotal,
