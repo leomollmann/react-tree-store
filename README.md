@@ -46,7 +46,7 @@ Consume the state tree fully or partially.
 ```tsx
 // component that is the core concept of the data
 function CartComponent() {
-    // when any "notify" gets called changes in the state, render this content
+    // when any "Store.update" gets called changes in the store, render this component
     const cart = cartStore.useTree() // CartState
 
     ...
