@@ -56,7 +56,7 @@ function Store<State>(initial: State) {
   /** queue all updates, once per render cycle.
    * update observers when the event loop is free
    */
-  function notify() {
+  function update() {
     if (!queued) {
       queued = true;
       setTimeout(() => {
@@ -74,22 +74,15 @@ function Store<State>(initial: State) {
   /** reset the store to the initial value */
   function reset() {
     state = _.cloneDeep(initial);
-    notify();
-  }
-
-  /** set the state with a new partial value */
-  function set(fork: Partial<State>) {
-    state = _.assign(state, fork);
-    notify();
+    update();
   }
 
   return {
     getTree,
     useSubtree,
     useTree,
-    notify,
-    reset,
-    set,
+    update,
+    reset
   };
 }
 

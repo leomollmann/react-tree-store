@@ -1,11 +1,9 @@
 {
   "name": "react-tree-store",
-  "version": "1.0.0",
+  "version": "0.1.0",
   "description": "Simple state management for React",
   "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
+  "scripts": {},
   "repository": {
     "type": "git",
     "url": "git+https://github.com/leomollmann/react-tree-store.git"
@@ -18,7 +16,7 @@
     "management"
   ],
   "author": "leomollmann",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/leomollmann/react-tree-store/issues"
   },
